@@ -1,1 +1,1 @@
-# cube-drop-privacy
+Since Cube Drop: Brain Block Game does not require account creation, there is no account to delete. To erase all your game data, simply go to Android Settings → Apps → Cube Drop: Brain Block Game → Storage → Clear Data, or uninstall the app.
