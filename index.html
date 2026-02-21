@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cube Drop: Brain Block Game</title>
+  <title>Privacy Policy — Cube Drop: Brain Block Game</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -20,7 +20,14 @@
       max-width: 760px;
       margin: 0 auto;
       padding: 48px 24px 80px;
+    }
+
+    /* Header */
+    .header {
       text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #2a2a45;
     }
 
     .logo {
@@ -34,68 +41,412 @@
       margin-bottom: 8px;
     }
 
-    .subtitle {
+    .header p {
       color: #7070a0;
       font-size: 14px;
       letter-spacing: 1px;
-      margin-bottom: 48px;
     }
 
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
+    /* Sections */
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
     }
 
-    .links a {
-      display: block;
-      width: 100%;
-      max-width: 360px;
-      padding: 16px 24px;
-      border-radius: 10px;
-      text-decoration: none;
+    h2 {
+      font-size: 18px;
       font-weight: 700;
-      font-size: 15px;
-      letter-spacing: 0.5px;
-    }
-
-    .links a.primary {
-      background: linear-gradient(135deg, #00e5ff22, #00e5ff11);
-      border: 1px solid #00e5ff55;
       color: #00e5ff;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      padding-left: 12px;
+      border-left: 3px solid #00e5ff;
     }
 
-    .links a.secondary {
-      background: #1a1a35;
-      border: 1px solid #2a2a55;
+    p {
+      margin-bottom: 14px;
       color: #b0b0cc;
     }
 
-    .links a:hover {
-      opacity: 0.85;
+    ul {
+      margin: 8px 0 16px 20px;
+      color: #b0b0cc;
     }
 
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: #1a1a35;
+      border: 1px solid #2a2a55;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight p {
+      margin-bottom: 0;
+    }
+
+    /* Badge — no data collected */
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #00e5ff22, #00e5ff11);
+      border: 1px solid #00e5ff55;
+      color: #00e5ff;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #1a1a35;
+      color: #00e5ff;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #1e1e38;
+      color: #b0b0cc;
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #0d0d22; }
+
+    /* Contact box */
+    .contact {
+      background: #1a1a35;
+      border: 1px solid #2a2a55;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+
+    .contact a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+
+    .contact a:hover { text-decoration: underline; }
+
+    /* Footer */
     .footer {
+      text-align: center;
       margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2a45;
       color: #4a4a6a;
       font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      .wrapper { padding: 32px 16px 60px; }
+      .logo { font-size: 26px; }
+      h1 { font-size: 22px; }
+      table { font-size: 13px; }
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <div class="logo">CUBEDROP</div>
-    <p class="subtitle">BRAIN BLOCK GAME</p>
 
-    <div class="links">
-      <a class="primary" href="privacy_policy.html">Privacy Policy</a>
-      <a class="secondary" href="remove-account.md">Remove Account / Delete Data</a>
+    <!-- ───── HEADER ───── -->
+    <div class="header">
+      <div class="logo">CUBEDROP</div>
+      <p>BRAIN BLOCK GAME</p>
     </div>
 
+    <!-- ───── TITLE ───── -->
+    <h1>Privacy Policy</h1>
+    <p style="color:#7070a0; font-size:14px; margin-bottom:24px;">
+      Effective Date: <strong style="color:#9090bb;">February 20, 2026</strong>
+      &nbsp;·&nbsp;
+      Last Updated: <strong style="color:#9090bb;">February 20, 2026</strong>
+    </p>
+
+    <div class="badge">✦ NO PERSONAL DATA COLLECTED</div>
+
+    <p>
+      Thank you for playing <strong style="color:#fff;">Cube Drop: Brain Block Game</strong>
+      ("the App", "the Game"). This Privacy Policy explains how we handle
+      information when you use our App. We believe in plain language —
+      no legal jargon.
+    </p>
+
+    <!-- ───── 1. WHO WE ARE ───── -->
+    <h2>1. Who We Are</h2>
+    <p>
+      Cube Drop: Brain Block Game is an independent mobile game developed
+      and published by <strong style="color:#fff;">[Your Name / Your Company Name]</strong>
+      ("we", "us", "our"). We are the sole developer and operator of this App.
+    </p>
+
+    <!-- ───── 2. SHORT ANSWER ───── -->
+    <h2>2. The Short Answer</h2>
+    <div class="highlight">
+      <p>
+        <strong style="color:#fff;">We do not collect, store, transmit, or share
+        any personal information about you.</strong> Cube Drop is a fully offline
+        puzzle game. All game data (your score, best score, settings) is stored
+        only on your own device using Android SharedPreferences and never leaves
+        your device.
+      </p>
+    </div>
+
+    <!-- ───── 3. WHAT DATA WE ACCESS ───── -->
+    <h2>3. What Data We Access</h2>
+    <p>
+      The App stores the following data <strong style="color:#fff;">locally on your
+      device only</strong>, using Android's SharedPreferences. This data is never
+      transmitted anywhere:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Stored Where</th>
+          <th>Shared?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>High score (integer)</td>
+          <td>Display your personal best</td>
+          <td>Device only (SharedPreferences)</td>
+          <td>Never</td>
+        </tr>
+        <tr>
+          <td>Sound on/off preference</td>
+          <td>Remember your sound setting</td>
+          <td>Device only (SharedPreferences)</td>
+          <td>Never</td>
+        </tr>
+        <tr>
+          <td>Dark/Light theme preference</td>
+          <td>Remember your theme setting</td>
+          <td>Device only (SharedPreferences)</td>
+          <td>Never</td>
+        </tr>
+        <tr>
+          <td>Daily challenge date &amp; score</td>
+          <td>Track daily puzzle progress</td>
+          <td>Device only (SharedPreferences)</td>
+          <td>Never</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      We do <strong style="color:#fff;">not</strong> collect your name, email address,
+      phone number, location, device identifiers, IP address, contacts, camera,
+      microphone, or any other personal or sensitive information.
+    </p>
+
+    <!-- ───── 4. INTERNET PERMISSION ───── -->
+    <h2>4. Internet &amp; Permissions</h2>
+    <p>
+      Cube Drop: Brain Block Game is an <strong style="color:#fff;">offline-only</strong>
+      game. It does not require an internet connection to play.
+    </p>
+    <p>The App requests <strong style="color:#fff;">no sensitive Android permissions</strong>.
+    It does not access:</p>
+    <ul>
+      <li>Internet / Network</li>
+      <li>Camera or Microphone</li>
+      <li>Location (GPS or network-based)</li>
+      <li>Contacts or Phone</li>
+      <li>Storage (external files)</li>
+      <li>Device identifiers (IMEI, Advertising ID)</li>
+    </ul>
+
+    <!-- ───── 5. THIRD-PARTY SERVICES ───── -->
+    <h2>5. Third-Party Services &amp; SDKs</h2>
+    <p>
+      The current version of Cube Drop does <strong style="color:#fff;">not include
+      any third-party SDKs</strong>, analytics tools, advertising networks, or
+      crash reporting services. We do not use:
+    </p>
+    <ul>
+      <li>Google Analytics / Firebase Analytics</li>
+      <li>Google AdMob or any other ad network</li>
+      <li>Facebook SDK</li>
+      <li>Crashlytics or similar crash reporters</li>
+      <li>Any social login (Google Sign-In, Facebook Login, etc.)</li>
+    </ul>
+    <div class="highlight">
+      <p>
+        <strong style="color:#fff;">Note:</strong> If a future update adds advertising
+        or analytics, this Privacy Policy will be updated before the update is
+        published, and users will be notified via the "What's New" section in the
+        Play Store listing.
+      </p>
+    </div>
+
+    <!-- ───── 6. CHILDREN ───── -->
+    <h2>6. Children's Privacy (COPPA)</h2>
+    <p>
+      Cube Drop: Brain Block Game is suitable for all ages, including children
+      under 13. Because we do not collect any personal data from any user, we
+      are fully compliant with the
+      <strong style="color:#fff;">Children's Online Privacy Protection Act (COPPA)</strong>
+      and Google Play's Families Policy.
+    </p>
+    <p>
+      We do not knowingly collect personal information from children under 13,
+      or from any user of any age.
+    </p>
+
+    <!-- ───── 7. GDPR ───── -->
+    <h2>7. European Users — GDPR</h2>
+    <p>
+      Since we do not collect, process, or store any personal data, the
+      <strong style="color:#fff;">General Data Protection Regulation (GDPR)</strong>
+      does not impose additional obligations on us beyond this disclosure.
+    </p>
+    <p>
+      European Union users have the following rights under GDPR. In our case,
+      all rights are automatically satisfied since no personal data exists:
+    </p>
+    <ul>
+      <li><strong style="color:#d0d0e8;">Right of Access</strong> — We hold no data about you.</li>
+      <li><strong style="color:#d0d0e8;">Right to Erasure</strong> — Uninstalling the App deletes all local data from your device.</li>
+      <li><strong style="color:#d0d0e8;">Right to Data Portability</strong> — No data to export.</li>
+      <li><strong style="color:#d0d0e8;">Right to Object</strong> — No processing to object to.</li>
+    </ul>
+
+    <!-- ───── 8. CCPA ───── -->
+    <h2>8. California Users — CCPA</h2>
+    <p>
+      Since we do not sell, share, or monetize any personal information, the
+      <strong style="color:#fff;">California Consumer Privacy Act (CCPA)</strong>
+      does not apply to our data practices. California residents have all the same
+      rights as other users — and since we collect no data, those rights are
+      automatically fully satisfied.
+    </p>
+
+    <!-- ───── 9. DATA SECURITY ───── -->
+    <h2>9. Data Security</h2>
+    <p>
+      All game data is stored locally on your device using Android's standard
+      SharedPreferences mechanism, which is sandboxed to the App and inaccessible
+      to other apps. We employ no servers, databases, or cloud storage.
+    </p>
+    <p>
+      If your device is lost, stolen, or reset, your game progress will be
+      lost as it exists only on the device. We recommend using Android's built-in
+      backup features if you wish to preserve your scores.
+    </p>
+
+    <!-- ───── 10. DATA RETENTION ───── -->
+    <h2>10. Data Retention &amp; Deletion</h2>
+    <p>
+      Game data (scores and preferences) is retained on your device as long
+      as the App is installed. To delete all data:
+    </p>
+    <ul>
+      <li>Go to <strong style="color:#fff;">Android Settings → Apps → Cube Drop</strong></li>
+      <li>Tap <strong style="color:#fff;">"Clear Data"</strong> — this erases all scores and preferences</li>
+      <li>Or simply <strong style="color:#fff;">uninstall</strong> the App</li>
+    </ul>
+
+    <!-- ───── 11. CHANGES ───── -->
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will:
+    </p>
+    <ul>
+      <li>Update the <strong style="color:#fff;">"Last Updated"</strong> date at the top of this page</li>
+      <li>Mention the update in the Play Store "What's New" section</li>
+    </ul>
+    <p>
+      We encourage you to review this policy periodically. Continued use of the App
+      after any changes constitutes acceptance of the updated policy.
+    </p>
+
+    <!-- ───── 12. CONTACT ───── -->
+    <h2>12. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or the App, please
+      contact us:
+    </p>
+    <div class="contact">
+      <p>
+        <strong style="color:#fff;">Developer:</strong> [Your Name / Company Name]<br />
+        <strong style="color:#fff;">Email:</strong>
+        <a href="mailto:your@email.com">your@email.com</a><br />
+        <strong style="color:#fff;">App:</strong> Cube Drop: Brain Block Game<br />
+        <strong style="color:#fff;">Platform:</strong> Google Play Store
+      </p>
+    </div>
+
+    <!-- ───── GOOGLE PLAY DATA SAFETY SUMMARY ───── -->
+    <h2>13. Google Play Data Safety Summary</h2>
+    <p>
+      The following is a summary of our responses in the
+      <strong style="color:#fff;">Google Play Data Safety Form</strong>
+      (App content → Data safety in Play Console):
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Does your app collect or share any of the required user data types?</td>
+          <td style="color:#69F0AE;">No</td>
+        </tr>
+        <tr>
+          <td>Is all of the user data collected by your app encrypted in transit?</td>
+          <td>N/A — No data transmitted</td>
+        </tr>
+        <tr>
+          <td>Do you provide a way for users to request that their data is deleted?</td>
+          <td style="color:#69F0AE;">Yes — by clearing app data or uninstalling</td>
+        </tr>
+        <tr>
+          <td>Does your app contain ads?</td>
+          <td style="color:#FFD740;">No (current version)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ───── FOOTER ───── -->
     <div class="footer">
-      <p>© 2026 Cube Drop: Brain Block Game</p>
+      <p>
+        © 2026 Khayal Sharifli · Cube Drop: Brain Block Game<br />
+        This privacy policy is hosted at a permanent URL as required by Google Play.
+      </p>
     </div>
+
   </div>
 </body>
 </html>
