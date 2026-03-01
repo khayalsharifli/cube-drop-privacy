@@ -1,0 +1,37 @@
+name: Deploy app-ads.txt to Root GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'app-ads.txt'
+  workflow_dispatch:
+
+jobs:
+  deploy-app-ads:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout cube-drop-privacy
+        uses: actions/checkout@v4
+
+      - name: Push app-ads.txt to khayalsharifli.github.io
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          set -e
+          if [ ! -f app-ads.txt ]; then
+            echo "Error: app-ads.txt not found in repository."
+            exit 1
+          fi
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global url."https://x-access-token:${GH_PAT}@github.com/".insteadOf "https://github.com/"
+          git clone https://github.com/khayalsharifli/khayalsharifli.github.io.git /tmp/root-pages
+          cp app-ads.txt /tmp/root-pages/app-ads.txt
+          cd /tmp/root-pages
+          git add app-ads.txt
+          git diff --staged --quiet || git commit -m "chore: sync app-ads.txt from cube-drop-privacy"
+          git push
